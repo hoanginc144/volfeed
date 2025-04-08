@@ -98,15 +98,15 @@ The code is designed for a local and a production environment, edit the paramete
 
 On your local environment, the .env file should look like this:
 
-    CLIENT_ID=YOUR_DERIBIT_CLIENT_ID
-    CLIENT_SECRET=YOUR_READ_ONLY_DERIBIT_CLIENT_SECRET
+    DERIBIT_CLIENT_ID=YOUR_DERIBIT_CLIENT_ID
+    DERIBIT_CLIENT_SECRET=YOUR_READ_ONLY_DERIBIT_CLIENT_SECRET
     CONNECTION=postgres://postgres:YOUR_POSTGRES_PASSWORD@YOUR_DOMAIN_OR_IP:5432/
     MODE=development
 
 On your production environment, it should look like this:
 
-    CLIENT_ID=YOUR_DERIBIT_CLIENT_ID
-    CLIENT_SECRET=YOUR_READ_ONLY_DERIBIT_CLIENT_SECRET
+    DERIBIT_CLIENT_ID=YOUR_DERIBIT_CLIENT_ID
+    DERIBIT_CLIENT_SECRET=YOUR_READ_ONLY_DERIBIT_CLIENT_SECRET
     CONNECTION=postgres://postgres:YOUR_POSTGRES_PASSWORD@YOUR_DOMAIN_OR_IP:5432/
     MODE=production
 
