@@ -91,8 +91,8 @@ The code is designed for a local and a production environment, edit the paramete
         db_name: option_chain
         update_interval: 300 # number of seconds between each update
     development:
-    	db_name: # the name of the production db
-    	update_interval: 30 # number of seconds between each update
+        db_name: # the name of the production db
+        update_interval: 30 # number of seconds between each update
 
 ### Setup .env
 
