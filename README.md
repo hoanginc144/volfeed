@@ -95,14 +95,14 @@ The code is designed for a local and a production environment, edit the paramete
 On your local environment, the .env file should look like this:
 
     CLIENT_ID=YOUR_DERIBIT_CLIENT_ID
-    CLIENT_SECRET=YOUR_DERIBIT_CLIENT_SECRET
+    CLIENT_SECRET=YOUR_READ_ONLY_DERIBIT_CLIENT_SECRET
     CONNECTION=postgres://postgres:YOUR_POSTGRES_PASSWORD@YOUR_DOMAIN_OR_IP:5432/
     MODE=development
 
 On your production environment, it should look like this:
 
     CLIENT_ID=YOUR_DERIBIT_CLIENT_ID
-    CLIENT_SECRET=YOUR_DERIBIT_CLIENT_SECRET
+    CLIENT_SECRET=YOUR_READ_ONLY_DERIBIT_CLIENT_SECRET
     CONNECTION=postgres://postgres:YOUR_POSTGRES_PASSWORD@YOUR_DOMAIN_OR_IP:5432/
     MODE=production
 
@@ -131,11 +131,3 @@ First install pm2, assuming you have node and npm already:
 Then start the app with pm2, replace your_pipeline with a name of your choosing:
 
     pm2 start main.py --name your_pipeline
-
-### Start the rest API service
-
-For the dashboard (which I use Appsmith to create), I use uvicorn and fastAPI to create the endpoint for the charts, you can start the rest.py as a service similar to how we do it with main.py, replace your_rest_app with a name of your choosing:
-
-    pm2 start rest.py --name your_rest_app
-
-The end point I made in the rest.py code should be accessible (note that it has no authorization whatsoever, so don't expose to the public before introducing some auth measures). For example, to get your portfolio data, visit [127.0.0.1:8000/api/portfolio](127.0.0.1:8000/api/portfolio)

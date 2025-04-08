@@ -4,8 +4,5 @@ py_vollib==1.0.1
 py_lets_be_rational==1.0.1
 aiohttp==3.9.4
 asyncpg==0.29.0
-uvicorn==0.29.0
-fastapi==0.110.1
 pydantic==2.6.4
-pyyaml
-telethon
+pyyaml==6.0.2
