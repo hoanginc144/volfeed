@@ -1,0 +1,6 @@
+# ignore env
+*.env
+*.sh
+*.DS_Store
+*.session
+__pycache__/

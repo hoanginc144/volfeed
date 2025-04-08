@@ -1,0 +1,8 @@
+production:
+  db_name: option_chain
+  update_interval: 300
+  delta_threshold: 1
+development:
+  db_name: dev_option_chain
+  update_interval: 30
+  delta_threshold: 1
