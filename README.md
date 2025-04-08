@@ -1,4 +1,8 @@
-﻿## How to setup the pipeline
+﻿## About volfeed
+
+Volfeed is an ingestion pipeline for Deribit's Bitcoin option chain data, your Deribit account summary, and BTC prices. The script will capture the data at the interval of your choice and put it Timescaledb. A VM with 2GB RAM and 25GB of storage would handle this nicely.
+
+## How to setup the pipeline
 
 ### Install Timescaledb using Docker
 
