@@ -88,10 +88,10 @@ Set up the hypertables and the compression policies, replace the your_table and 
 The code is designed for a local and a production environment, edit the parameters.yaml file for your needs, using the databases we created above, the file should look like this:
 
     production:
-        db_name: option_chain
+        db_name: # the name of the production db
         update_interval: 300 # number of seconds between each update
     development:
-        db_name: # the name of the production db
+        db_name: # the name of the development db
         update_interval: 30 # number of seconds between each update
 
 ### Setup .env
