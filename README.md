@@ -1,6 +1,6 @@
 ﻿## About volfeed
 
-Volfeed is an ingestion pipeline for Deribit's Bitcoin option chain data, your Deribit account summary, and BTC prices. The script will capture the data at the interval of your choice and put it Timescaledb. A VM with 2GB RAM and 25GB of storage would handle this nicely.
+Volfeed is an ingestion pipeline for Deribit's Bitcoin option chain data, your Deribit account summary, and BTC prices. The script will capture the data at the interval of your choice and put it Timescaledb. In addition to data provided by Deribit's get_book_summary_by_currency you will get all IVs as well (calculated using py_lets_be_rational). A VM with 2GB RAM and 25GB of storage would handle this nicely.
 
 ## How to setup the pipeline
 
